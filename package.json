@@ -1,0 +1,19 @@
+{
+  "name": "cicd-triage-agent",
+  "version": "0.1.0",
+  "description": "Autonomous CI/CD failure triage and patch generation agent (GitHub Actions + Gemini)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@octokit/rest": "^21.0.0",
+    "express": "^4.21.0"
+  }
+}
